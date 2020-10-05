@@ -56,7 +56,7 @@ Ext.define('Calculator', {
                     series[stackValue].push((records && records.length) || 0);
                 } else {
                     var valueTotal = _.reduce(records, function (total, r) {
-                        var valueField = Utils.getFieldForAggregationType(this.aggregateBy);
+                        var valueField = this.aggregateBy;
                         return total + r.get(valueField);
                     }, 0, this);
                     series[stackValue].push(valueTotal);
@@ -85,7 +85,7 @@ Ext.define('Calculator', {
         } else {
             seriesData = _.map(groupedData, function (value, key) {
                 var valueTotal = _.reduce(value, function (total, r) {
-                    var valueField = Utils.getFieldForAggregationType(this.aggregateBy);
+                    var valueField = this.aggregateBy;
                     return total + r.get(valueField);
                 }, 0, this);
                 return [key, valueTotal];

@@ -1,17 +1,13 @@
 {
-  "name": "PIVelocityChart",
-  "version": "1.0.5",
-  "private": true,
-  "devDependencies": {
-    "grunt": "1.0.1",
-    "grunt-cli": "1.2.0",
-    "grunt-contrib-jasmine": "1.0.3",
-    "grunt-contrib-jshint": "1.1.0",
-    "grunt-contrib-connect": "1.0.2",
-    "rally-sdk2-test-utils": "0.1.2"
+  "name": "pi-velocity-chart",
+  "version": "1.1.0",
+  "repository": "https://github.com/CustomAgile/utils-ancestor-pi-app-filter",
+  "devDependencies": {},
+  "dependencies": {
+    "@agile-central-technical-services/utils-file-utils": "^1.0.0",
+    "@customagile/ancestor-pi-multi-level-pi-app-filter": "git+https://github.com/CustomAgile/utils-ancestor-pi-app-filter.git",
+    "@customagile/utils-field-renderer": "git+https://github.com/CustomAgile/utils-field-renderer.git",
+    "papaparse": "^5.1.1"
   },
-  "scripts": {
-    "test": "npm i && grunt test",
-    "test:debug": "npm i && grunt test:debug"
-  }
+  "scripts": {}
 }

@@ -4,11 +4,18 @@
     "server": "https://rally1.rallydev.com",
     "sdk": "2.1",
     "javascript": [
-        "Utils.js",
-        "Calculator.js",
-        "PIVelocityChartApp.js"
+        "node_modules/@customagile/ancestor-pi-multi-level-pi-app-filter/index.js",
+        "node_modules/@customagile/utils-field-renderer/field-renderer.js",
+        "node_modules/file-saver/FileSaver.min.js",
+        "node_modules/@agile-central-technical-services/utils-file-utils/index.js",
+        "node_modules/papaparse/papaparse.min.js",
+        "src/js/field-picker.js",
+        "src/js/calculator.js",
+        "src/js/app.js"
     ],
     "css": [
-        "app.css"
-    ]
+        "node_modules/@customagile/ancestor-pi-multi-level-pi-app-filter/index.css",
+        "src/style/app.css"
+    ],
+    "templates": "./templates"
 }
