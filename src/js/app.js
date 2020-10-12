@@ -514,16 +514,12 @@ Ext.define('PIVelocityChartApp', {
                 aggregateBy: this.getAggregateBy()
             },
             chartConfig: {
-                chart: { type: 'column' },
+                chart: { type: 'column', animation: false },
                 legend: { enabled: this._isByRelease() },
-                title: {
-                    text: ''
-                },
+                title: { text: '' },
                 yAxis: {
                     min: 0,
-                    title: {
-                        text: this._getYAxisLabel()
-                    },
+                    title: { text: this._getYAxisLabel() },
                     stackLabels: {
                         enabled: true,
                         style: {
@@ -541,6 +537,11 @@ Ext.define('PIVelocityChartApp', {
                         },
                         showInLegend: true,
                         colorByPoint: false
+                    },
+                    series: {
+                        animation: {
+                            duration: 0
+                        }
                     }
                 }
             }
